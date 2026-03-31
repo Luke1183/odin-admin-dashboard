@@ -23,4 +23,17 @@ header {
     grid-row: 1 / span 2;
     background-color: rgb(4, 155, 197);
     color: white;
+    display: grid;
+    grid-template-rows: 3rem 10rem 1fr;
+}
+
+h1,
+h2 {
+    display: inline;
+}
+
+li {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
