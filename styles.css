@@ -12,6 +12,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 5rem 1fr;
+    margin: 0;
+    height: 100vh;
 }
 
 header {
@@ -23,17 +25,81 @@ header {
     grid-row: 1 / span 2;
     background-color: rgb(4, 155, 197);
     color: white;
-    display: grid;
-    grid-template-rows: 3rem 10rem 1fr;
+    padding: 1rem;
 }
 
 h1,
 h2 {
     display: inline;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr repeat(11, 1fr);
+    place-items: center left;
+    padding: 0;
+    margin: 0;
+    gap: 0.5rem;
 }
 
 li {
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2rem 1fr;
+    place-items: center;
+    gap: 1rem;
+}
+
+img {
+    height: 1.6rem;
+}
+
+.sidebar-break {
+    margin-top: 2rem;
+}
+
+#home-li {
+    grid-row-start: 3;
+}
+
+#profile-li {
+    grid-row-start: 4;
+}
+
+#messages-li {
+    grid-row-start: 5;
+}
+
+#history-li {
+    grid-row-start: 6;
+}
+
+#tasks-li {
+    grid-row-start: 7;
+}
+
+#communities-li {
+    grid-row-start: 8;
+}
+
+#settings-li {
+    grid-row-start: 10;
+}
+
+#support-li {
+    grid-row-start: 11;
+}
+
+#privacy-li {
+    grid-row-start: 12;
 }
