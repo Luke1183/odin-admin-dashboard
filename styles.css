@@ -61,6 +61,11 @@ li {
     gap: 1rem;
 }
 
+li:hover {
+    color: lightgray;
+    cursor: pointer;
+}
+
 img {
     height: 1.6rem;
 }
