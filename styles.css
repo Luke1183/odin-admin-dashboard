@@ -156,3 +156,34 @@ form {
 input {
     display: inline;
 }
+
+.profile-links {
+    display: grid;
+    grid-template-columns: 1fr 3rem 3rem max-content;
+    place-items: center;
+}
+
+#notification-icon {
+    grid-column-start: 2;
+}
+
+.bug-profile-pic-container {
+    grid-column-start: 3;
+    background-color: rgb(255, 225, 0);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
+}
+
+#my-account {
+    grid-column-start: 4;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#my-account {
+    color: black;
+    text-decoration: none;
+}
