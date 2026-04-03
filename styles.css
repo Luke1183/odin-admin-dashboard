@@ -12,7 +12,7 @@ body {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 5rem 1fr;
+    grid-template-rows: 8rem 1fr;
     margin: 0;
     min-height: 100vh;
 }
@@ -20,6 +20,11 @@ body {
 header {
     grid-column: 2;
     box-shadow: 0px 3px 3px -2px lightgray;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .sidebar {
@@ -41,6 +46,10 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
+}
+
+p {
+    margin: 0;
 }
 
 ul {
@@ -108,4 +117,42 @@ img {
 
 #privacy-li {
     grid-row-start: 12;
+}
+
+.searchbar-container {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    place-items: center;
+}
+
+button#search-button {
+    background-color: white;
+    height: 2rem;
+    width: 2rem;
+    padding: 0;
+    border: 0;
+    margin-top: 0.15rem;
+}
+
+button#search-button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+#searchbox {
+    background-color: rgb(217, 235, 237);
+    border-style: none;
+    border-radius: 0.75rem;
+    height: 1.5rem;
+    width: 90%;
+    min-width: 5rem;
+    justify-self: start;
+}
+
+form {
+    display: inline;
+}
+
+input {
+    display: inline;
 }
