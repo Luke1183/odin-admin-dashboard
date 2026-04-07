@@ -218,3 +218,26 @@ input {
     font-size: large;
     min-width: max-content;
 }
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+button {
+    color: white;
+    background-color: rgb(46, 166, 241);
+    border-style: none;
+    height: 2rem;
+    min-width: 10ch;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+button:hover {
+    background-color: blue;
+    cursor: pointer;
+}
