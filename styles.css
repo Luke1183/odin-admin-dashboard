@@ -181,9 +181,40 @@ input {
     grid-column-start: 4;
     margin-left: 1rem;
     margin-right: 1rem;
-}
-
-#my-account {
     color: black;
     text-decoration: none;
+}
+
+.profile-banner {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    grid-template-rows: 1rem 1fr;
+    place-items: center start;
+}
+
+.bug-profile-pic-large-container {
+    grid-column-start: 1;
+    grid-row-start: span 2;
+    background-color: rgb(255, 225, 0);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 1.5rem;
+    display: grid;
+    place-items: center;
+}
+
+#bug-profile-pic-large {
+    height: 2.5rem;
+}
+
+#greeting {
+    grid-column-start: 2;
+    font-size: small;
+}
+
+#my-name {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-size: large;
+    min-width: max-content;
 }
