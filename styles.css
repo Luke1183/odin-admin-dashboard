@@ -48,6 +48,11 @@ h2 {
     font-size: 1.5rem;
 }
 
+h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
 p {
     margin: 0;
 }
@@ -240,4 +245,42 @@ button {
 button:hover {
     background-color: blue;
     cursor: pointer;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(234, 234, 234);
+    gap: 1rem;
+    padding-left: 0.8rem;
+    padding-top: 1.5rem;
+    padding-right: 1rem;
+}
+
+.projects {
+    grid-row: span 2;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+}
+
+.project-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border-left: solid rgb(255, 204, 0) 0.5rem;
+    display: grid;
+    grid-template-rows: 1fr 1.5rem;
+    gap: 1rem;
+
+}
+
+.project-links {
+    display: grid;
+    grid-template-columns: 2rem 2rem 2rem;
+    gap: 1rem;
+    place-items: center;
+    justify-self: end;
 }
