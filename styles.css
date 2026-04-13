@@ -261,6 +261,14 @@ button:hover {
 .projects {
     grid-row: span 2;
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1rem 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+.project-cards-container {
+    display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 
