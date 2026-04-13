@@ -54,6 +54,11 @@ h3 {
     margin: 0;
 }
 
+h4 {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
 p {
     margin: 0;
 }
@@ -293,4 +298,30 @@ button:hover {
     gap: 1rem;
     place-items: center;
     justify-self: end;
+}
+
+.announcements {
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: 1rem;
+}
+
+.update-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    box-shadow: 4px 4px 4px 0px rgb(144, 144, 144);
+
+}
+
+.update-message-text {
+    font-size: 0.8rem;
+}
+
+.divider {
+    border: solid 0.5px gray;
+    height: 1px;
 }
