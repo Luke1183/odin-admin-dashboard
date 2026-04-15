@@ -178,7 +178,7 @@ input {
     grid-column-start: 2;
 }
 
-.bug-profile-pic-container {
+#bug-profile-pic-container {
     grid-column-start: 3;
     background-color: rgb(255, 225, 0);
     height: 2rem;
@@ -262,6 +262,7 @@ button:hover {
     padding-left: 0.8rem;
     padding-top: 1.5rem;
     padding-right: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 .projects {
@@ -324,4 +325,67 @@ button:hover {
 .divider {
     border: solid 0.5px gray;
     height: 1px;
+}
+
+.trending {
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: 1rem;
+}
+
+.trending-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    box-shadow: 4px 4px 4px 0px rgb(144, 144, 144);
+}
+
+.trending-message {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.trending-message-text {
+    color: darkslategray;
+}
+
+.cake-profile-pic-container {
+    background-color: rgb(255, 154, 154);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
+}
+
+.bug-profile-pic-container {
+    background-color: rgb(255, 225, 0);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
+}
+
+.microscope-profile-pic-container {
+    background-color: rgb(31, 74, 249);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
+}
+
+.disappointed-profile-pic-container {
+    background-color: rgb(226, 255, 168);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
 }
